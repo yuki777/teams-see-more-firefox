@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Teams see more for Firefox",
+  "version": "1.1",
+  "icons": {
+    "128": "tsm-logo-128.png",
+    "48": "tsm-logo-48.png",
+    "16": "tsm-logo-16.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://teams.microsoft.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
